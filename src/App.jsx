@@ -67,7 +67,7 @@ const App = ({ isServerInfo }) => {
                 <Main/>
             </Route>
             <Route path="/nonauthenticated">
-              <h3>Please login using the "Authenticate" button</h3>
+              <h3>Please login using the favzydev</h3>
             </Route>
           </Switch>
           {isAuthenticated ? <Redirect to="/main" /> : <Redirect to="/nonauthenticated" />}
@@ -77,6 +77,6 @@ const App = ({ isServerInfo }) => {
   );
 };
 
-export const Logo = () => <h4>Decentradit</h4>
+export const Logo = () => <h4>favzydev</h4>
 
 export default App;
