@@ -26,7 +26,7 @@ const styles = {
     position: "fixed",
     zIndex: 1,
     width: "100%",
-    background: "#fff",
+    background: "#FFFF00",
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
@@ -34,6 +34,9 @@ const styles = {
     borderBottom: "2px solid rgba(0, 0, 0, 0.06)",
     padding: "0 10px",
     boxShadow: "0 1px 10px rgb(151 164 175 / 10%)",
+  },
+  text: {
+    color: '#0000FF'
   },
   headerRight: {
     display: "flex",
@@ -67,7 +70,7 @@ const App = ({ isServerInfo }) => {
                 <Main/>
             </Route>
             <Route path="/nonauthenticated">
-              <h3>Please login using the favzydev</h3>
+              <h3>Please login using the lovedev</h3>
             </Route>
           </Switch>
           {isAuthenticated ? <Redirect to="/main" /> : <Redirect to="/nonauthenticated" />}
@@ -77,6 +80,6 @@ const App = ({ isServerInfo }) => {
   );
 };
 
-export const Logo = () => <h4>favzydev</h4>
+export const Logo = () => <h4 style={styles.text}  >love</h4>
 
 export default App;
